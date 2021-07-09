@@ -1,0 +1,9 @@
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\bin\Debug\netcoreapp3.1\ACM.BL.deps.json
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\bin\Debug\netcoreapp3.1\ACM.BL.dll
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\bin\Debug\netcoreapp3.1\ACM.BL.pdb
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.csproj.AssemblyReference.cache
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.AssemblyInfoInputs.cache
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.AssemblyInfo.cs
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.csproj.CoreCompileInputs.cache
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.dll
+E:\DEV_SKILL_COURSE\Object_oriented_programming_in_Csharp\CUSTOMER_MANAGEMENT_SYSTEM\ACM\ACM.BL\obj\Debug\netcoreapp3.1\ACM.BL.pdb
