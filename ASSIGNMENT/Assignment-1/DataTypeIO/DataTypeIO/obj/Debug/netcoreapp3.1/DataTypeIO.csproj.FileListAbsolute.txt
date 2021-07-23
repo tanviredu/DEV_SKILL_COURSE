@@ -1,0 +1,13 @@
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.csproj.AssemblyReference.cache
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.AssemblyInfoInputs.cache
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.AssemblyInfo.cs
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.csproj.CoreCompileInputs.cache
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.exe
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.deps.json
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.runtimeconfig.json
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.runtimeconfig.dev.json
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.dll
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\bin\Debug\netcoreapp3.1\DataTypeIO.pdb
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.dll
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.pdb
+E:\DEV_SKILL_COURSE\ASSIGNMENT\Assignment-1\DataTypeIO\DataTypeIO\obj\Debug\netcoreapp3.1\DataTypeIO.genruntimeconfig.cache
