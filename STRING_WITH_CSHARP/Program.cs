@@ -85,7 +85,8 @@ namespace STRING_WITH_CSHARP
             Console.WriteLine(char.ToUpper('c'));
             Console.WriteLine(char.ToLower('D'));
             Console.WriteLine(char.IsDigit('8'));
-            Console.WriteLine(char.IsNumber("9"));
+            Console.WriteLine(char.IsNumber('9'));
+            
 
 
         }
