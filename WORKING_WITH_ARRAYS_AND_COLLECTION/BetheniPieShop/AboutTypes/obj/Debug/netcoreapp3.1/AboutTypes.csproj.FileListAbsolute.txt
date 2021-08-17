@@ -1,0 +1,13 @@
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.exe
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.deps.json
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.runtimeconfig.json
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.runtimeconfig.dev.json
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.dll
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\bin\Debug\netcoreapp3.1\AboutTypes.pdb
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.csproj.AssemblyReference.cache
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.AssemblyInfoInputs.cache
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.AssemblyInfo.cs
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.csproj.CoreCompileInputs.cache
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.dll
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.pdb
+E:\DEV_SKILL_COURSE\WORKING_WITH_ARRAYS_AND_COLLECTION\BetheniPieShop\AboutTypes\obj\Debug\netcoreapp3.1\AboutTypes.genruntimeconfig.cache

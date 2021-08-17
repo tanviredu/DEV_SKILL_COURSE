@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Working_With_Methods/1.0.0": {
+        "runtime": {
+          "Working_With_Methods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Working_With_Methods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
