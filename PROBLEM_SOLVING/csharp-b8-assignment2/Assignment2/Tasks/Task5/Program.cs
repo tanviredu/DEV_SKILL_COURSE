@@ -11,9 +11,31 @@ namespace Task5
             Console.WriteLine(result);
         }
 
-        public static int CountVowels(string aText)
+        public static bool isVowel(char ch)
         {
-            throw new NotImplementedException();
+            ch = char.ToUpper(ch);
+            return (ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e'||
+                    ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' ||
+                                  ch == 'U' || ch == 'u');
+        }
+
+
+
+
+        public static int CountVowels(string str)
+        {
+            int count = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+
+
+                if (isVowel(str[i]))
+                {
+                    ++count;
+                }
+            }
+            return count;
+
         }
     }
 }

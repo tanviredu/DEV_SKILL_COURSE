@@ -12,7 +12,13 @@ namespace Task2
 
         public static int StringValue(string aText)
         {
-            throw new NotImplementedException();
+            var totalvalue = 0;
+            foreach (char i in aText)
+            {
+                var value = (int)i;
+                totalvalue += value;
+            }
+            return totalvalue;
         }
     }
 }
