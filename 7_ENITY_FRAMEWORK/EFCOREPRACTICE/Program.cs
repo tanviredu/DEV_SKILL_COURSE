@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using EFCOREPRACTICE.SamuraiApp.Domain;
 using EFCOREPRACTICE.SamuraiApp.Data;
 namespace EFCOREPRACTICE
@@ -17,7 +18,17 @@ namespace EFCOREPRACTICE
             //QueryFilters();
             //UpdateQuery();
             //DeleteQuery();
-            InsertBattle();
+            //InsertBattle();
+            //InsertNewSamuraiWithAQuote();
+            //AddQuoteWithExistingSamurai();
+            //fetch_data1();
+            //fetch_data2();
+            fetch_data_egar();
+
+            //var quotes =_context.Quotes.ToList();
+            //foreach(var s in quotes){
+            //        Console.WriteLine(s.Text);
+            // }
         }
 
         public static void InsertMultipleSamurai(){
@@ -72,6 +83,56 @@ namespace EFCOREPRACTICE
             _context.SaveChanges();
 
         }
+
+        public static void InsertNewSamuraiWithAQuote(){
+            // working with the related data
+            var samurai = new Samurai();
+            samurai.Name = "Kambei Shimada";
+            samurai.Quotes = new List<Quote>();
+            samurai.Quotes.Add(new Quote{Text="I have Come To save you"});
+            samurai.Quotes.Add(new Quote{Text="Never Gieve Up"});
+            samurai.Quotes.Add(new Quote{Text="Trust and respect yourself"});
+            _context.Samurais.Add(samurai);
+            _context.SaveChanges();
+
+        }
+
+        public static void AddQuoteWithExistingSamurai(){
+            var samurai = _context.Samurais.FirstOrDefault();
+            samurai.Quotes = new List<Quote>();
+            samurai.Quotes.Add(new Quote{Text="into the sky live or die"});
+            samurai.Quotes.Add(new Quote{Text="Fight like there is no tommorow"});
+            samurai.Quotes.Add(new Quote{Text="Fight with honor"});
+            _context.SaveChanges();
+            
+
+        }
+
+        public static void fetch_data1(){
+            var samurai = _context.Samurais.FirstOrDefault();
+            Console.WriteLine($"Samurai name {samurai.Name}");
+
+
+        }
+
+        public static void fetch_data_egar(){
+            // lazy loading is turned of by default
+            // so use include for join query
+            var samu_with_quote = _context.Samurais.Include(s=>s.Quotes).ToList();
+            foreach(var s in samu_with_quote){
+                    Console.WriteLine($"Samurai Name : {s.Name}");
+                    Console.WriteLine("-------------------------");
+                    foreach(var c in s.Quotes){
+                        Console.WriteLine($"Quotes : {c.Text}");
+                    }
+            }
+
+
+        }
+
+
+
+
 
     }
 }
