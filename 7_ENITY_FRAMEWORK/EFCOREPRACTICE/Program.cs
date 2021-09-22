@@ -23,12 +23,16 @@ namespace EFCOREPRACTICE
             //AddQuoteWithExistingSamurai();
             //fetch_data1();
             //fetch_data2();
-            fetch_data_egar();
+            //fetch_data_egar();
+            //fetch_single_data_egar();
+            //Join1();
+            //Join2();
+            //InsertBattle2();
+            //Join3();
+            //ManyToManyQuery1();
+            ManyToManyQuery2();
 
-            //var quotes =_context.Quotes.ToList();
-            //foreach(var s in quotes){
-            //        Console.WriteLine(s.Text);
-            // }
+            
         }
 
         public static void InsertMultipleSamurai(){
@@ -130,7 +134,76 @@ namespace EFCOREPRACTICE
 
         }
 
+        public static void fetch_single_data_egar(){
+            var samu = _context.Samurais.Where(s=>s.Id==1).Include(c=>c.Quotes).ToList();
+            foreach(var s in samu){
+                Console.WriteLine($"Name : {s.Name}");
+                foreach(var c in s.Quotes){
+                    Console.WriteLine($"Quotes : {c.Text}");
+                }
+            }
 
+        }
+
+        public static void Join1(){
+
+            // adding a samurai with battle
+            // take a battle 
+            // and attach samurai with the battle
+            var battle = _context.Battles.Find(1);
+            battle.SamuraiBattles.Add(new SamuraiBattle{SamuraiId = 4});
+            _context.SaveChanges();
+
+        }
+
+        public static void Join2(){
+            // take a samurai
+            // attach a battle with the samurai
+            var samurai = _context.Samurais.Find(1);
+            samurai.SamuraiBattles.Add(new SamuraiBattle{BattleId=1});
+            _context.SaveChanges();
+
+        }
+
+        public static void InsertBattle2(){
+            var battle = new Battle();
+            battle.Name = "world war 3";
+            battle.StartDate = new DateTime(2020,12,23);
+            battle.EndDate = new DateTime(2022,12,23);
+            _context.Battles.Add(battle);
+            _context.SaveChanges();
+
+        }
+        public static void Join3(){
+            var samurai = _context.Samurais.Find(1);
+            samurai.SamuraiBattles.Add(new SamuraiBattle{BattleId = 2});
+            _context.SaveChanges();
+        }
+
+        public static void ManyToManyQuery1(){
+
+            // get a samurai and find all the battle he perticipate
+            var samurai = _context.Samurais.Where(x=>x.Id==1).Include(s=>s.SamuraiBattles).ThenInclude(c=>c.Battle).FirstOrDefault();
+            Console.WriteLine($"Name Of Samurai: {samurai.Name}");
+            foreach (var i in samurai.SamuraiBattles)
+            {
+                Console.WriteLine($"battle fought : {i.Battle.Name}");
+                
+            }
+        }
+
+        public static void ManyToManyQuery2(){
+
+            // get a battle and find which samurai are involved
+            var battle = _context.Battles.Where(x=>x.Id==1).Include(s=>s.SamuraiBattles).ThenInclude(c=>c.Samurai).FirstOrDefault();
+            Console.WriteLine($"Battle Name {battle.Name}");
+            foreach(var b in battle.SamuraiBattles){
+                Console.WriteLine($"Samurai Fought : {b.Samurai.Name}");
+            }
+
+
+
+        }
 
 
 
