@@ -8,6 +8,8 @@ namespace EFCOREPRACTICE.SamuraiApp.Domain
         public string Name {get;set;}
         public List<Quote> Quotes = new List<Quote>();
         public Clan Clan {get;set;}
+        public Horse Horse {get;set;}
+        public List<SamuraiBattle> SamuraiBattles{get;set;} = new List<SamuraiBattle>();
         
     }
 }
