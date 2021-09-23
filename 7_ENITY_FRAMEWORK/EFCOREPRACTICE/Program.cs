@@ -12,26 +12,29 @@ namespace EFCOREPRACTICE
         static void Main(string[] args)
         {
             
-            //InsertMultipleSamurai();
-            //InsertVarious();
-            //getAllSamurai();
-            //QueryFilters();
-            //UpdateQuery();
+            InsertMultipleSamurai();
+            InsertVarious();
+            getAllSamurai();
+            QueryFilters();
+            UpdateQuery();
             //DeleteQuery();
-            //InsertBattle();
-            //InsertNewSamuraiWithAQuote();
-            //AddQuoteWithExistingSamurai();
+            InsertBattle();
+            InsertNewSamuraiWithAQuote();
+            AddQuoteWithExistingSamurai();
             //fetch_data1();
             //fetch_data2();
-            //fetch_data_egar();
+            fetch_data_egar();
             //fetch_single_data_egar();
-            //Join1();
-            //Join2();
-            //InsertBattle2();
-            //Join3();
-            //ManyToManyQuery1();
+            Join1();
+            Join2();
+            InsertBattle2();
+            Join3();
+            ManyToManyQuery1();
             ManyToManyQuery2();
-
+            AddSamuraiWithHorse();
+            AddHorseWithExistingSamurai();
+            GetSamuraiWithHorse();
+            SamuraiRawQuery();
             
         }
 
@@ -202,6 +205,44 @@ namespace EFCOREPRACTICE
             }
 
 
+
+        }
+        public static void AddSamuraiWithHorse(){
+
+            var samurai = new Samurai{Name="Jina Wakimoto"};
+            samurai.Horse = new Horse {Name="Silver"};
+            _context.Samurais.Add(samurai);
+            _context.SaveChanges();
+        }
+
+        public static void AddHorseWithExistingSamurai(){
+            var samurai = _context.Samurais.FirstOrDefault();
+            samurai.Horse = new Horse{Name="Gold"};
+            _context.SaveChanges();
+            
+        }
+
+
+        public static void GetSamuraiWithHorse(){
+
+            var samurai = _context.Samurais.Include(s=>s.Horse).Where(s=>s.Id==1).FirstOrDefault();
+            Console.WriteLine($"Samurai Name : {samurai.Name}");
+            Console.WriteLine($"Horse Name : {samurai.Horse.Name}");
+
+
+        }
+
+        public static void SamuraiRawQuery(){
+            var samurais = _context.Samurais.FromSqlRaw("SELECT * FROM Samurais").ToList();
+            var battles = _context.Battles.FromSqlRaw("SELECT * FROM Battles").ToList();
+            foreach(var sm in samurais){
+                Console.WriteLine($"Samurai Name {sm.Name}");
+            }
+
+            Console.WriteLine("------------------------------");
+            foreach(var bt in battles){
+                Console.WriteLine($"Samurai Name {bt.Name}");
+            }
 
         }
 

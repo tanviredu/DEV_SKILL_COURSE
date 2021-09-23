@@ -11,7 +11,7 @@ namespace EFCOREPRACTICE.SamuraiApp.Data
 
         public SamuraiContext()
         {
-            _connectionString = ConnectionStringReader.ConnectionString1;
+            _connectionString = ConnectionStringReader.ConnectionString2;
             
         }
         public DbSet<Samurai>Samurais {get;set;}
@@ -20,8 +20,8 @@ namespace EFCOREPRACTICE.SamuraiApp.Data
         public DbSet<Battle>Battles {get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
-            optionsBuilder.UseSqlServer(_connectionString);
-            //optionsBuilder.UseSqlite(_connectionString);
+            //optionsBuilder.UseSqlServer(_connectionString);
+            optionsBuilder.UseSqlite(_connectionString);
             base.OnConfiguring(optionsBuilder);
         }
 
